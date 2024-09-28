@@ -489,7 +489,121 @@
             </li>
           </ul>
         </div>
+        <div class="footer-container-share">
+          <p class="paragraph footer-share-paragraph">Subscribe</p>
+          <form action="order-form" class="subscribe-form">
+            <label>
+              <input
+                type="email"
+                class="footer-input-email"
+                name="footer-email-subscribe"
+                id="footer-email-subscribe"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="label-footer-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal Overlay -->
+
+    <div class="modal-overlay" data-modal>
+      <div class="overlay">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="paragraph-overlay">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="service-form">
+          <div class="label-input">
+            <label class="form-fild-label" for="user-name">Name</label>
+            <div class="service-form-input-wraper">
+              <input
+                class="review-form-input"
+                name="user-name"
+                type="text"
+                id="user-name"
+                required
+              />
+              <svg class="label-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="label-input">
+            <label class="form-fild-label" for="user-phone">Phone</label>
+            <div class="review-form-input-wraper">
+              <input
+                class="review-form-input"
+                name="user-phone"
+                type="text"
+                id="user-phone"
+              />
+              <svg class="label-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="label-input">
+            <label class="form-fild-label" for="overley-user-email"
+              >Email</label
+            >
+            <div class="review-form-input-wraper">
+              <input
+                class="review-form-input"
+                name="user-email"
+                type="text"
+                id="overley-user-email"
+                required
+              />
+              <svg class="label-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-Vector-2"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="label-input-coment">
+            <label class="form-fild-label" for="user-comment">Comment</label>
+            <textarea
+              class="textarea-checkbox"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              required
+            >
+            </textarea>
+          </div>
+          <div class="checkbox-wraper">
+            <input
+              class="review-form-checkbox visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              required
+              value="true"
+            />
+            <label class="review-form-checkbox-label" for="user-privacy">
+              <span class="custom-checkbox">
+                <svg class="custom-chekbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-ok"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="review-form-btn" type="submit">Send</button>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
