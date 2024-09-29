@@ -598,6 +598,7 @@ input {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -684,7 +685,7 @@ input {
   margin-bottom: 8px;
 }
 
-.form-fild-label {
+.form-field-label {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -767,7 +768,9 @@ input {
   color: #8e8f99;
 }
 
-.service-form-checkbox:checked + .service-form-checkbox-label > .custom-checkbox {
+.service-form-checkbox:checked
+  + .service-form-checkbox-label
+  > .custom-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -801,6 +804,9 @@ input {
 }
 
 .service-form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
