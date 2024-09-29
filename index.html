@@ -71,7 +71,9 @@
           <h1 class="title hero-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="hero-button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -527,48 +529,46 @@
         </p>
         <form class="service-form">
           <div class="label-input">
-            <label class="form-fild-label" for="user-name">Name</label>
+            <label class="form-field-label" for="username">Name</label>
             <div class="service-form-input-wraper">
               <input
-                class="review-form-input"
-                name="user-name"
+                class="service-form-input"
+                name="username"
                 type="text"
-                id="user-name"
+                id="username"
                 required
               />
               <svg class="label-input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-Vector"></use>
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="label-input">
             <label class="form-fild-label" for="user-phone">Phone</label>
-            <div class="review-form-input-wraper">
+            <div class="service-form-input-wraper">
               <input
-                class="review-form-input"
+                class="service-form-input"
                 name="user-phone"
                 type="text"
                 id="user-phone"
               />
               <svg class="label-input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-Vector-1"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="label-input">
-            <label class="form-fild-label" for="overley-user-email"
-              >Email</label
-            >
-            <div class="review-form-input-wraper">
+            <label class="form-fild-label" for="user-email">Email</label>
+            <div class="service-form-input-wraper">
               <input
-                class="review-form-input"
+                class="service-form-input"
                 name="user-email"
                 type="text"
-                id="overley-user-email"
+                id="user-email"
                 required
               />
               <svg class="label-input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-Vector-2"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -585,24 +585,29 @@
           </div>
           <div class="checkbox-wraper">
             <input
-              class="review-form-checkbox visually-hidden"
+              class="service-form-checkbox visually-hidden"
               type="checkbox"
               id="user-privacy"
               name="user-privacy"
               required
               value="true"
             />
-            <label class="review-form-checkbox-label" for="user-privacy">
+            <label class="service-form-checkbox-label" for="user-privacy">
               <span class="custom-checkbox">
                 <svg class="custom-chekbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-ok"></use>
+                  <use href="./images/icons.svg#icon-accepted"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
               <a class="policy-link" href="">Privacy Policy</a>
             </label>
           </div>
-          <button class="review-form-btn" type="submit">Send</button>
+          <button class="service-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Java Script -->
 
     <script src="./js/modal.js"></script>
   </body>
